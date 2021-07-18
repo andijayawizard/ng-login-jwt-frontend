@@ -14,7 +14,10 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
-import { PasienComponent } from './pasien/pasien.component';
+import { PasienListComponent } from './components/pasien/pasien-list/pasien-list.component';
+import { PasienAddComponent } from './components/pasien/pasien-add/pasien-add.component';
+import { PasienDetailComponent } from './components/pasien/pasien-detail/pasien-detail.component';
+import { PasienModel } from './model/pasien/pasien.model';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { PasienComponent } from './pasien/pasien.component';
     BoardAdminComponent,
     BoardModeratorComponent,
     BoardUserComponent,
-    PasienComponent
+    PasienListComponent,
+    PasienAddComponent,
+    PasienDetailComponent,
+    PasienModel,
   ],
   imports: [
     BrowserModule,
