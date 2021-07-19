@@ -17,7 +17,6 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { PasienListComponent } from './components/pasien/pasien-list/pasien-list.component';
 import { PasienAddComponent } from './components/pasien/pasien-add/pasien-add.component';
 import { PasienDetailComponent } from './components/pasien/pasien-detail/pasien-detail.component';
-import { PasienModel } from './model/pasien/pasien.model';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,6 @@ import { PasienModel } from './model/pasien/pasien.model';
     PasienListComponent,
     PasienAddComponent,
     PasienDetailComponent,
-    PasienModel,
   ],
   imports: [
     BrowserModule,

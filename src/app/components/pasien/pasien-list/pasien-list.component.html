@@ -5,7 +5,7 @@
         type="text"
         class="form-control"
         placeholder="Search by title"
-        [(ngModel)]="title"
+        [(ngModel)]="nama"
       />
       <div class="input-group-append">
         <button
@@ -23,47 +23,39 @@
     <ul class="list-group">
       <li
         class="list-group-item"
-        *ngFor="let tutorial of tutorials; let i = index"
+        *ngFor="let pasien of pasiens; let i = index"
         [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorial, i)"
+        (click)="setActivePasien(pasien, i)"
       >
-        {{ tutorial.title }}
+        {{ pasien.nama }}
       </li>
     </ul>
 
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllTutorials()">
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllPasiens()">
       Remove All
     </button>
   </div>
   <div class="col-md-6">
-    <div *ngIf="currentTutorial">
+    <div *ngIf="currentPasien">
       <h4>Tutorial</h4>
       <div>
-        <label><strong>Title:</strong></label> {{ currentTutorial.title }}
+        <label><strong>Nama:</strong></label> {{ currentPasien.nama }}
       </div>
       <div>
-        <label><strong>Description:</strong></label>
-        {{ currentTutorial.description }}
+        <label><strong>HP:</strong></label>
+        {{ currentPasien.hp }}
       </div>
       <div>
-        <label><strong>Author:</strong></label>
-        {{ currentTutorial.author }}
-      </div>
-      <div>
-        <label><strong>Price:</strong></label>
-        {{ currentTutorial.price }}
-      </div>
-      <div>
-        <label><strong>Status:</strong></label>
-        {{ currentTutorial.published ? "Published" : "Pending" }}
+        <label><strong>Alamat:</strong></label>
+        {{ currentPasien.alamat }}
       </div>
 
-      <a class="badge badge-warning" routerLink="/tutorials/{{ currentTutorial.id }}">
+      <a class="badge badge-warning" routerLink="/pasiens/{{ currentPasien.id }}">
         Edit
       </a>
     </div>
 
-    <div *ngIf="!currentTutorial">
+    <div *ngIf="!currentPasien">
       <br />
       <p>Please click on a Pasien...</p>
     </div>

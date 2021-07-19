@@ -8,7 +8,7 @@
           class="form-control"
           id="nama"
           required
-          [(ngModel)]="tutorial.nama"
+          [(ngModel)]="pasien.nama"
           name="nama"
         />
       </div>
@@ -19,7 +19,7 @@
           class="form-control"
           id="hp"
           required
-          [(ngModel)]="tutorial.hp"
+          [(ngModel)]="pasien.hp"
           name="hp"
         />
       </div>
@@ -29,16 +29,16 @@
           class="form-control"
           id="alamat"
           required
-          [(ngModel)]="tutorial.alamat"
+          [(ngModel)]="pasien.alamat"
           name="alamat"
         />
       </div>
-      <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
+      <button (click)="savePasien()" class="btn btn-success">Submit</button>
     </div>
 
     <div *ngIf="submitted">
       <h4>Tutorial was submitted successfully!</h4>
-      <button class="btn btn-success" (click)="newTutorial()">Add</button>
+      <button class="btn btn-success" (click)="newPasien()">Add</button>
     </div>
   </div>
 </div>
