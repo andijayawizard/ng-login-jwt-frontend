@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular11JwtAuth",
+            "outputPath": "static",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Angular11JwtAuth"
+  "defaultProject": "Angular11JwtAuth",
+  "cli": {
+    "analytics": "2041a92a-914b-4969-a322-d9c2464eece5"
+  }
 }
