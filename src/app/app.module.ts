@@ -14,7 +14,8 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardUserComponent } from './board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
-// import { PasienListComponent } from './components/pasien/pasien-list/pasien-list.component';
+
+import { PasienListComponent } from './components/pasien/pasien-list/pasien-list.component';
 // import { PasienAddComponent } from './components/pasien/pasien-add/pasien-add.component';
 // import { PasienDetailComponent } from './components/pasien/pasien-detail/pasien-detail.component';
 
@@ -27,8 +28,8 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     ProfileComponent,
     BoardAdminComponent,
     BoardModeratorComponent,
-    BoardUserComponent
-    // PasienListComponent,
+    BoardUserComponent,
+    PasienListComponent,
     // PasienAddComponent,
     // PasienDetailComponent,
   ],

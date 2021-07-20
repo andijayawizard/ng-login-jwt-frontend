@@ -10,8 +10,8 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 
 import { PasienListComponent } from './components/pasien/pasien-list/pasien-list.component';
-import { PasienAddComponent } from './components/pasien/pasien-add/pasien-add.component';
-import { PasienDetailComponent } from './components/pasien/pasien-detail/pasien-detail.component';
+// import { PasienAddComponent } from './components/pasien/pasien-add/pasien-add.component';
+// import { PasienDetailComponent } from './components/pasien/pasien-detail/pasien-detail.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,10 +21,10 @@ const routes: Routes = [
   { path: 'user', component: BoardUserComponent },
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 
   // additional
-  // { path: 'pasien', component: PasienListComponent },
+  { path: 'pasien', component: PasienListComponent },
   // { path: 'pasien-add', component: PasienAddComponent },
   // { path: 'pasien-detail', component: PasienDetailComponent },
 ];
